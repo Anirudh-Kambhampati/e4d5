@@ -1,0 +1,73 @@
+.sidebar {
+  // margin-top: 100px;
+  // margin-left: 50px;
+  padding-top: 50px;
+  width: 250px;
+  /* background-color: #376e6f; */
+  height: 100vh;
+  color: #fff;
+  overflow: auto;
+  overflow-y: auto;
+  // background-image: linear-gradient(#fcbd78, #ff65c3);
+  background-image: linear-gradient(#9c27b0, #90caf9);
+
+  &--expanded {
+    background-size: 100%;
+    background-position: 0 0;
+    transform: translateX(0);
+  }
+
+  &:hover {
+    background-position: 0 0;
+  }
+}
+
+.folderTree {
+  margin-left: 10px;
+  padding-top: 2px;
+}
+
+.treeNode {
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.treeNodeItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.treeNodeItem .moduleName {
+  display: flex;
+  column-gap: 4px;
+  margin-left: 8px;
+}
+
+.treeNodeItem .folderControls {
+  visibility: hidden;
+  display: flex;
+  column-gap: 8px;
+  margin-right: 10px;
+}
+.treeNodeItem:hover .folderControls {
+  visibility: visible;
+}
+
+.center-screen {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
